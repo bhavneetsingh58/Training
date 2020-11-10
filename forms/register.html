@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="register.css">
+
+<title>login</title>
+<body>
+    <div class="loginbox">
+        <img src="res/avatar.png" class="avatar">
+        <h1>Register Here</h1>
+        <form name="registration" action="#" onsubmit="return validation()">
+            <p>Name</p>
+            <input type="text" name="name" id="name" placeholder="Enter Name">
+            <span id="nameSpan" ></span>
+            
+            <p>Email</p>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <span id="emailSpan" ></span>
+
+
+            <p>Gender</p>
+            <input type="radio" name="gender" placeholder="Male" value="male" id="male" class="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" placeholder="Female" value="Female" id="female" class="gender">
+            <label for="male">Female</label>
+            <span id="genderSpan" ></span>
+            
+            <p>State</p>
+
+            <select id="dropdown" name="State"  placeholder="Select State">
+              <option value="">Select State</option>
+              <option value="Maharashtra" style="color: Black;">Maharashtra</option>
+              <option value="Punjab" style="color: Black;">Punjab</option>
+              <option value="Delhi" style="color: Black;">Delhi</option>
+              <option value="Kerala" style="color: Black;">Kerala</option>
+            </select>
+            <span id="StateSpan" ></span>
+
+            <p>Password</p>
+            <input type="password" name="pass" placeholder="Enter Password" id="pass">
+            <span id="passSpan" ></span>
+            <input type="submit" name="submit" value="Register">
+            <!-- <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a> -->
+        </form>
+        
+    </div>
+    <script src="register.js"> </script>
+</body>
+</head>
+</html>
